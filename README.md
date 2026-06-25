@@ -107,19 +107,6 @@ npm start #client
 
 ---
 
-## ✏️ Customization Checklist
-
-- [ ] Update your **name** in `Hero.js` (replace "Alex Dev")
-- [ ] Update **social links** in `Hero.js` and `Contact.js`
-- [ ] Update **email** in `Contact.js`
-- [ ] Edit **about text** in `About.js`
-- [ ] Replace **projects** via the API or directly in `Projects.js`
-- [ ] Update **experience** entries in `Experience.js`
-- [ ] Add your **resume PDF** as `client/public/resume.pdf`
-- [ ] Update `<title>` in `client/public/index.html`
-
----
-
 ## 🌐 Deployment
 
 ### Deploy Frontend (Vercel / Netlify)
