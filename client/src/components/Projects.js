@@ -18,7 +18,7 @@ export default function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await axios.get('/api/projects');
+        const res = await axios.get('https://my-portfolio-l0wu.onrender.com/api/projects');
         setProjects(res.data);
       } catch (err) {
         console.error('API not available, using fallback data');

@@ -31,7 +31,7 @@ export default function Contact() {
 
     setStatus('sending');
     try {
-      await axios.post('/api/contact', form);
+      await axios.post('https://my-portfolio-l0wu.onrender.com/api/contact', form);
       setStatus('success');
       setForm({ name: '', email: '', subject: '', message: '' });
     } catch {
