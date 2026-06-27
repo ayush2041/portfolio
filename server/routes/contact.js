@@ -17,10 +17,14 @@ router.post('/', async (req, res) => {
     }
 
     // Save to DB if mongoose is connected
-    if (require('mongoose').connection.readyState === 1) {
-      const contact = new Contact({ name, email, subject, message });
-      await contact.save();
-    }
+  const mongoose = require('mongoose');
+
+  if (mongoose.connection.readyState !== 1) {
+  return res.status(500).json({ error: 'Database not connected' });
+  }
+
+  const contact = new Contact({ name, email, subject, message });
+  await contact.save();
 
     res.status(201).json({
       success: true,

@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: process.env.CLIENT_URL || 'https://my-portfolio-iota-snowy-16.vercel.app/',
   credentials: true
 }));
 app.use(express.json());
